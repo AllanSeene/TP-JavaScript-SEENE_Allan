@@ -38,3 +38,12 @@ console.log(nbr4 % nbr1);
 let nomSerie = prompt("Quelle est ta série préferée?");
 let nomPerso = prompt("Quel est ton personnage favori?");
 alert(`Ma série préférée est ${nomSerie} et mon personnage est ${nomPerso}.`);
+
+let number = 5;
+let text = '5';
+let isRainingToday = true;
+console.log(number == text);
+console.log(number === text);
+if(isRainingToday){
+    console.log("Where is my umbrella!");
+}
