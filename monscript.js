@@ -47,17 +47,40 @@ console.log(number === text);
 if(isRainingToday){
     console.log("Where is my umbrella!");
 }
-/*let age = prompt("Quel âge as-tu?");
+let age = prompt("Quel âge as-tu?");
 if(age < 0){
     alert("Âge invalide.");
-}else if(age < 18){
-    alert(`L'utilisateur de ${age} ans est mineur.`);
-}else if(age >= 18 && age < 65){
-    alert(`L'utilisateur de ${age} ans est majeur.`);
 }
-else if(age >= 65){
-    alert(`L'utilisateur de ${age} ans est retraité et majeur!`);
+    /*
+else if(age == 18){
+    alert(`L'utilisateur de ${age} ans vient d'être majeur.`);
+}else if(age == 25){
+    alert(`L'utilisateur de ${age} ans à un quart de siècle.`);
 }
-*/
+else if(age == 50){
+    alert(`L'utilisateur de ${age} ans à un demi-siècle.`);
+}
+else if(age == 62){
+    alert(`L'utilisateur de ${age} ans est retraité.`);
+}
+else if(age == 100){
+    alert(`L'utilisateur de ${age} ans à vécu un siècle.`);
+}*/
 
-
+switch(age){
+    case '18':
+        alert(`L'utilisateur de ${age} ans vient d'être majeur.`);
+        break;
+    case '25':
+        alert(`L'utilisateur de ${age} ans à un quart de siècle.`);
+        break;
+    case '50':
+        alert(`L'utilisateur de ${age} ans à un demi-siècle.`);
+        break;
+    case '62':
+        alert(`L'utilisateur de ${age} ans est retraité.`);
+        break;
+    case '100':
+        alert(`L'utilisateur de ${age} ans à vécu un siècle.`);
+        break;
+}
