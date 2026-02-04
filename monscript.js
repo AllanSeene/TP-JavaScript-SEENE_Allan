@@ -47,3 +47,17 @@ console.log(number === text);
 if(isRainingToday){
     console.log("Where is my umbrella!");
 }
+/*let age = prompt("Quel âge as-tu?");
+if(age < 0){
+    alert("Âge invalide.");
+}else if(age < 18){
+    alert(`L'utilisateur de ${age} ans est mineur.`);
+}else if(age >= 18 && age < 65){
+    alert(`L'utilisateur de ${age} ans est majeur.`);
+}
+else if(age >= 65){
+    alert(`L'utilisateur de ${age} ans est retraité et majeur!`);
+}
+*/
+
+
