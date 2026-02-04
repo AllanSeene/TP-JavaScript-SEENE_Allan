@@ -38,4 +38,4 @@ console.log(nbr4 % nbr1);
 
 let nomSerie = prompt("Quelle est ta série préferée?");
 let nomPerso = prompt("Quel est ton personnage favori?");
-console.log(`Ma série préférée est ${nomSerie} et mon personnage est ${nomPerso}.`);
+alert(`Ma série préférée est ${nomSerie} et mon personnage est ${nomPerso}.`);
