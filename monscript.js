@@ -15,7 +15,6 @@ let maDateV2={
     jour : nomJour,
     mois : nomMois,
 };
-
 console.log(maDate.jour, maDate.mois);
 console.log(maDateV2.jour, maDateV2.mois);
 
