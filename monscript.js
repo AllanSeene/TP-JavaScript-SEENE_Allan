@@ -153,6 +153,10 @@ console.log(result);
 
 /* Toutes les variables */
 let li = document.querySelector("#listeCourses li");
+let dateJour = new Date(Date.now());
+let dateJourFr = dateJour.toLocaleDateString('fr-FR')
+let recupHtml = document.querySelector("h2")
+recupHtml.innerHTML += " : " + dateJourFr
 
 
 /* Tous les évènements */
