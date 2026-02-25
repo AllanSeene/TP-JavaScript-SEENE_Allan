@@ -1,4 +1,4 @@
-let nomJour = "Mercredi";
+/*let nomJour = "Mercredi";
 let numJour = "3";
 let nomMois = "Fevrier";
 let isWinter = true;
@@ -65,7 +65,7 @@ else if(age == 62){
 }
 else if(age == 100){
     alert(`L'utilisateur de ${age} ans à vécu un siècle.`);
-}*/
+}
 
 switch(age){
     case '18':
@@ -83,4 +83,50 @@ switch(age){
     case '100':
         alert(`L'utilisateur de ${age} ans à vécu un siècle.`);
         break;
+}*/
+
+
+
+/* TP Boucle */
+/*let result = 0;
+let i = 0;
+let lenght = +prompt("choisis un nombre entre 1 et 100");
+if(lenght < 1 || lenght > 100) {
+    alert("Retente avec qq chose de valide.");
+}else{
+    do{
+        result += i;
+        i++;
+    }while(i<=lenght && typeof lenght == Number);
 }
+/*for(let i = 0; i <= 100; i++){
+    result += i;
+}
+
+while(i <=100){
+    result += i;
+    i++;
+}
+
+do{
+    result += i;
+    i++;
+}while(i <= 100);
+*/
+
+console.log(result); 
+
+
+/* TP 12 */
+
+let tabElements = ["Element 1", "Element 2", "Element 3", "Element 4", "Element 5", "Element 6", "Element 7", "Element 8", "Element 9", "Element 10"];
+/*for(let i = 0; i < 8; i++){
+console.log(tabElements[i]);
+}*/
+
+/*for(let i = 0; i < tabElements.length; i++){
+    console.log(tabElements[i]);
+}*/
+
+
+
