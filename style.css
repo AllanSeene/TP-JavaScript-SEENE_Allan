@@ -63,7 +63,10 @@ ul li.checked::before {
 	height: 15px;
 	width: 7px;
 }
-
+.itemCheck {
+	background-color: lightblue !important;
+	text-decoration: line-through;
+}
 /* Style the close button */
 .close {
 	position: absolute;

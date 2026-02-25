@@ -157,8 +157,7 @@ let li = document.querySelector("#listeCourses li");
 
 /* Tous les évènements */
 li.addEventListener('click', ()=>{
-  li.style.backgroundColor = "lightblue";
-  li.style.textDecoration = "line-through";
+  li.classList.toggle("itemCheck")
 })
 
 
