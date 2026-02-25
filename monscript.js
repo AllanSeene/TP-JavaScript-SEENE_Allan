@@ -112,21 +112,44 @@ do{
     result += i;
     i++;
 }while(i <= 100);
+console.log(result);
 */
 
-console.log(result); 
+ 
 
 
 /* TP 12 */
 
-let tabElements = ["Element 1", "Element 2", "Element 3", "Element 4", "Element 5", "Element 6", "Element 7", "Element 8", "Element 9", "Element 10"];
-/*for(let i = 0; i < 8; i++){
-console.log(tabElements[i]);
-}*/
+// let tabElements = ["Element 1", "Element 2", "Element 3", "Element 4", "Element 5", "Element 6", "Element 7", "Element 8", "Element 9", "Element 10"];
+// /*for(let i = 0; i < 8; i++){
+// console.log(tabElements[i]);
+// }*/
 
-/*for(let i = 0; i < tabElements.length; i++){
-    console.log(tabElements[i]);
-}*/
+// /*for(let i = 0; i < tabElements.length; i++){
+//     console.log(tabElements[i]);
+// }*/
+
+// /* EX Bonus */
+
+// let annee = +prompt("En quelle année êtes vous né?");
+// /*function calculAge(annee){
+//     let date = new Date();
+//     let anneeActuelle = date.getFullYear();
+//     return anneeActuelle - annee;
+// }
+// console.log(`Vous avez ${calculAge(annee)} ans.`);
+
+// */
+// /* Fonction fléchée */
+// let ageV2 = annee => {
+//     let date = new Date();
+//     let anneeActuelle = date.getFullYear();
+//     return anneeActuelle - annee;
+// }
+// console.log(`Vous avez ${ageV2(annee)} ans.`);
+
+
+
 
 
 
