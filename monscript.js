@@ -178,19 +178,24 @@ myInput.addEventListener('keydown', (event) => {
 
 
 /* Les fonctions */
-function addProduct(){
+function addProduct() {
   let valeurSaisie = myInput.value;
   if (valeurSaisie === "") {
-    alert("Erreur de saisie"); 
+    alert("Erreur de saisie");
   } else {
-    let newLi = document.createElement("li"); 
-
-    newLi.textContent = valeurSaisie; 
+    let newLi = document.createElement("li");
+    newLi.textContent = valeurSaisie;
+    alert("Produit ajouté");
     newLi.addEventListener('click', () => {
-    newLi.classList.toggle("itemCheck"); 
+        newLi.classList.toggle("itemCheck");
     });
-    liste.appendChild(newLi); 
+    newLi.addEventListener('dblclick', () => {
+      liste.removeChild(newLi);
+      alert("Produit supprimé");
+    });
+    liste.appendChild(newLi);
     myInput.value = "";
   }
 }
 
+/* Le Lait va rester parce qu'il en faut vraiment donc on le supprime pas */
