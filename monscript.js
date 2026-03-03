@@ -154,17 +154,43 @@ console.log(result);
 /* Toutes les variables */
 let li = document.querySelector("#listeCourses li");
 let dateJour = new Date(Date.now());
-let dateJourFr = dateJour.toLocaleDateString('fr-FR')
-let recupHtml = document.querySelector("h2")
-recupHtml.innerHTML += " : " + dateJourFr
+let dateJourFr = dateJour.toLocaleDateString('fr-FR');
+let recupHtml = document.querySelector("h2");
+recupHtml.innerHTML += " : " + dateJourFr;
+let myInput = document.querySelector("#myInput");
+let btn = document.querySelector(".btn");
+let liste = document.querySelector("#listeCourses");
 
 
 /* Tous les évènements */
 li.addEventListener('click', ()=>{
   li.classList.toggle("itemCheck")
 })
+console.log("Input trouvé ?", myInput);
+console.log("Bouton trouvé ?", btn);
+console.log("Premier li trouvé ?", li);
+btn.addEventListener('click', addProduct);
+myInput.addEventListener('keydown', (event) => {
+  if (event.key === "Enter") {
+    addProduct();
+  }
+});
 
 
 /* Les fonctions */
-// A voir plus tard
+function addProduct(){
+  let valeurSaisie = myInput.value;
+  if (valeurSaisie === "") {
+    alert("Erreur de saisie"); 
+  } else {
+    let newLi = document.createElement("li"); 
+
+    newLi.textContent = valeurSaisie; 
+    newLi.addEventListener('click', () => {
+    newLi.classList.toggle("itemCheck"); 
+    });
+    liste.appendChild(newLi); 
+    myInput.value = "";
+  }
+}
 
